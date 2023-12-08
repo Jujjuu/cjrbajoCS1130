@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <title>CS1130</title>
+</head>
+
+<body class="w3-white">
+  <div class="container w3-center">
+    <div class="image-container">
+      <img src="images/Untitled_design-removebg-preview.png" style="width: 250px; height: auto;">
+      <div class="w3-margin">
+        <h2 class="w3-text-black"><strong>CS 1130</strong></h2>
+        <p>INTRODUCTION TO COMPUTING</p>
+      </div>
+      <div id="links-container" class="links-container">
+        <a href="#" class="w3-button w3-large" data-link="conversion" onclick="showLinkContent('conversion')">Conversion</a>
+        <a href="#" class="w3-button w3-large" data-link="calculator" onclick="showLinkContent('calculator')">Income Tax Calculator</a>
+        <a href="#" class="w3-button w3-large" data-link="factorial" onclick="showLinkContent('factorial')">Factorial</a>
+        <a href="#" class="w3-button w3-large" data-link="payroll" onclick="showLinkContent('payroll')">Simple Payroll</a>
+        <a href="#" class="w3-button w3-large" data-link="aboutMe" onclick="showLinkContent('aboutMe')">About Me</a>
+      </div>
+      <div id="conversion-container" class="conversion-container" style="display: none;">
+        <h1>Conversion Programs</h1>
+        <p>Select a conversion type:</p>
+        <button class="conversion-buttons" onclick="convertTemperature()">Celsius to Fahrenheit</button>
+        <button class="conversion-buttons" onclick="convertTemperatureReverse()">Fahrenheit to Celsius</button>
+        <button class="conversion-buttons" onclick="convertLength()">Meters to Feet</button>
+        <button class="conversion-buttons" onclick="convertLengthReverse()">Feet to Meters</button>
+        <br>
+        <a href="#" class="w3-button w3-large" onclick="goBackFromConversion()">Back</a>
+      </div>
+      <div id="calculator-container" class="calculator-container" style="display: none;">
+        <h1>Income Tax Calculator</h1>
+        <label for="taxableIncome">Enter Taxable Income:</label>
+        <input type="number" id="taxableIncome">
+        <br>
+        <button class="w3-button w3-large calculate-button" onclick="calculateIncomeTax()">Calculate Income Tax</button>
+        <br>
+        <a href="#" class="w3-button w3-large" onclick="goBackFromCalculator()">Back</a>
+      </div>
+      <div id="factorial-container" class="factorial-container" style="display: none;">
+        <h1>Factorial Program</h1>
+        <button class="w3-button w3-large calculate-button" onclick="calculateFactorial()">Calculate Factorial</button>
+        <br>
+        <a href="#" class="w3-button w3-large" onclick="goBackFromFactorial()">Back</a>
+      </div>
+      <div id="payroll-container" class="payroll-container" style="display: none;">
+        <h1>Simple Payroll Program</h1>
+        <button class="w3-button w3-large calculate-button" onclick="addEmployee()">Add Employee</button>
+        <button class="w3-button w3-large calculate-button" onclick="deleteEmployee()">Delete Employee</button>
+        <table id="payrollTable"></table>
+        <br>
+        <a href="#" class="w3-button w3-large" onclick="goBackFromPayroll()">Back</a>
+      </div>
+      <div id="about-me-container" class="about-me-container" style="display: none;">
+        <h1 class="about-me-header">About Me</h1>
+        <div class="picture-container">
+          <img src="images/ttn-image-2023-10-26-093253674.png" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;">
+        </div>
+        <p>My name is Camille Juliene R. Bajo. I'm 19 years old. I'm from Mati City, Davao Oriental, and moved to Davao in 2020.
+          I studied at Lyceum of the Philippines - Davao in senior high school. Now, I'm a college student who is currently studying at Ateneo de Davao University.
+          I'm introverted and shy, and I only communicate with the people I know. I like cats, dogs, and playing video games.
+        </p>
+        <br>
+        <a href="#" class="w3-button w3-large" onclick="goBackFromAboutMe()">Back</a>
+      </div>
+    </div>
+  </div>
+  <footer class="w3-container w3-center w3-padding-48">
+    <div class="w3-margin-bottom">
+      <img src="images/382329665_809868310933942_3958491705832784494_n-removebg-preview.png" width="60" height="60">
+      </a>
+      <img src="images/UniversitySeal240px-removebg-preview.png" width="60" height="60">
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
